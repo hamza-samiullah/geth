@@ -1,0 +1,14 @@
+geth // to start a geth node
+geth account new 
+geth account list
+geth --rinkeby --rpc --rpcapi eth,db,net,web3,personal console //start testnet in ethereum network
+geth --rinkeby account new // create new account in test network
+geth attach ipc:/home/hsug/.ethereum/rinkeby/geth.ipc // to attack in another window
+geth --rpc --rpcapi eth,db,net,web3,personal console //pulic
+geth --networkid 123 --datadir hi --rpc --rpcaddr 192.168.0.107 --port 3000 console //open node on specific ip address
+ifconfig|grep netmask|awk '{print $2}' //find the ip address
+admin.nodeInfo.enode   // get the enode value
+admin.peers  //get the peers info
+admin.addPeer("enode value") //add new peer
+
+
