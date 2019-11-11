@@ -11,4 +11,6 @@ admin.nodeInfo.enode   // get the enode value
 admin.peers  //get the peers info
 admin.addPeer("enode value") //add new peer
 
+geth --datadir ~/nodes/n2 --rpc --networkid 1 --port 30304 console //run multiple nodes
+
 
