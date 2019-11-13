@@ -14,6 +14,9 @@ admin.addPeer("enode value") //add new peer
 geth --datadir ~/nodes/n2 --rpc --networkid 1 --port 30304 console //run multiple nodes
 
 geth --datadir ~/nodes/n1 --syncmode "light" --lightkdf --cache.noprefetch --networkid 1 --rpc --rpcaddr 10.109.5.164 --rpcport 8000 --port 3000 console    // for light node generation
-            
 
+
+geth --datadir --bootnodes enode://dcf2c50fee7f641c81e3438d48153d6223484629a7f477396248206c8bfa3b53084b4641139901d2ccd4deb060535c3d211808f74a6d17636a654d8d17f61006@127.0.0.1:3000  ~/nodes/n1 --syncmode "light" --lightkdf --cache.noprefetch --networkid 1 --rpc --rpcaddr 10.109.5.164 --rpcport 8000 --port 3000 console        
+
+geth --datadir ~/nodes/n1 --bootnodes --networkid 1 --rpc --rpcaddr 10.109.5.164 --rpcport 8000 --port 3000 console  
 
